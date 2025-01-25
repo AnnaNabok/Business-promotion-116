@@ -73,6 +73,9 @@ align-items: center;
   font-size: 30px;
   line-height: 0.93333;
   color: #173a56;
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
 
 .nav-list {
