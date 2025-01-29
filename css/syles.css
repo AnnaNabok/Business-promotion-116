@@ -469,6 +469,7 @@ main {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.66667;
+  transition: color 150ms ease;
 }
 
 .strategies-list-item:hover .strategies-item-title,
@@ -481,6 +482,149 @@ main {
 .prices {
   padding: 100px 0 50px;
 }
+
+.prices-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.prices-text {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.prices-list {
+  display: flex;
+  gap: 72px;
+}
+
+.prices-item {
+  flex-basis: calc((100% - 144px) / 3);
+  padding: 32px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+  transition: color 150ms ease 0ms, background-color 150ms ease 0ms;
+}
+
+.prices-item:hover .prices-order-btn,
+.prices-item:focus .prices-order-btn {
+  color: #02897A;
+  background-color: #FFFFFF; 
+}
+
+.prices-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.66667;
+}
+
+.prices-item-descr {
+  font-family: "Montserrat", sans-serif;
+  line-height: 2.5;
+  color: #fff;
+}
+
+.price-wrap {
+  /* position: relative; */
+  max-width: 154px;
+  display: flex;
+gap: 10px;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin-bottom: 16px;
+}
+
+.prices-payment {
+  font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 1.31579;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #02897a;
+    transition: color 150ms ease, background-color 150ms ease;
+}
+
+.price-container {
+  display: block;
+  max-width: 98px;
+  gap: 7px;
+  flex-direction: column;
+  /* justify-content: left; */
+}
+
+.prices-payment-currency {
+  /* position: absolute; */
+  right: 0;
+  top: 0;
+  font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+    letter-spacing: 0em;
+    color: #02897a;
+    transition: color 150ms ease, background-color 150ms ease;
+}
+
+.prices-payment-period {
+  font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1875;
+    letter-spacing: 0.01em;
+    color: #e0e0e0;
+}
+
+.prices-options-list {
+  margin-bottom: 30px;
+}
+
+.prices-options-item {
+  font-weight: 500;
+  line-height: 1.375;
+  letter-spacing: 0.01em;
+}
+
+.prices-options-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.prices-order-btn {
+  background-color: #02897A;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  min-width: 139px;
+  height: 44px;
+  border-radius: 8px;
+  border: none;
+  padding: 11 18px;
+  /* transition: color 150ms ease 50ms, background-color 50ms ease 50ms; */
+}
+
+.prices-item:hover,
+.prices-item:focus,
+.prices-item:hover .prices-payment,
+.prices-item:hover .prices-payment,
+.prices-item:hover .prices-payment-currency,
+.prices-item:hover .prices-payment-currency {
+  color: #FFFFFF;
+  background-color: #02897A;
+}
+
+/* .prices-order-btn:hover,
+.prices-order-btn:hover {
+  color: #000;
+  background-color: ;
+} */
 /* #endregion PRICES */
 
 /* #region ======HEADER====== */
