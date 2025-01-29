@@ -765,4 +765,57 @@ max-width: 968px;
 .footer {
   padding: 100px 0 34px;
 }
+
+.footer-container {
+  display: flex;
+  gap: 82px;
+}
+
+.footer-logo-nav {
+  margin-right: 80px;
+}
+
+.footer-second-column {
+  margin-right: 47px;
+}
+
+.footer-accent {
+  font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer-list-item {
+
+}
+
+.footer-list-link {
+}
+
+.form-text {
+  display: block;
+  max-width: 280px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.footer-btn {
+  font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #02897A;
+    padding: 8px 15px 7px;
+    min-width: 131px;
+    border-radius: 4px;
+}
+
+.footer-rights {
+  line-height: 1.875;
+  text-align: center;
+}
+
 /* #endregion FOOTER */
