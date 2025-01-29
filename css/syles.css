@@ -705,7 +705,64 @@ margin-bottom: 16px;
 /* #endregion FEEDBACKS */
 
 /* #region ======INVITATION====== */
+.invitation {
+  padding: 50px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
+
+.invitation-container {
+max-width: 968px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #02897A;
+  padding: 0 46px 10px 51px;
+  align-items: center;
+}
+    
+.invitation-wrap {
+  max-width: 510px;
+}
+    
+.invitation-text {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.514;
+  color: #fff;
+  margin-bottom: 46px;
+}
+    
+.invitation-btn {
+  border-radius: 8px;
+  min-width: 150px;
+  height: 50px;
+  padding: 10px 34px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #02897a;
+  background-color: #FFFFFF;
+}
+    
+.invitation-img {
+  max-width: 351px;
+}
 /* #endregion INVITATION */
 
 /* #region ======FOOTER====== */
+.footer {
+  padding: 100px 0 34px;
+}
 /* #endregion FOOTER */
