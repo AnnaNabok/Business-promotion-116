@@ -13,6 +13,7 @@ ol, ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -23,6 +24,10 @@ button {
   cursor: pointer;
   border: none;
   font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
 }
 
 h2 {
@@ -65,7 +70,7 @@ main {
 
 .navigation {
   display: flex;
-align-items: center;
+  align-items: center;
 }
 
 .nav-logo {
@@ -76,6 +81,7 @@ align-items: center;
   display: flex;
   gap: 16px;
   align-items: center;
+  margin-right: 237px;
 }
 
 .nav-list {
@@ -89,7 +95,6 @@ align-items: center;
 
 .nav-list-link {
   display: block;
-  font-weight: 600;
   line-height: 1.75;
   padding: 26px 0;
 }
@@ -104,22 +109,27 @@ align-items: center;
   align-items: center;
 }
 
-.header-btn-item {}
-
-.header-btn-sign {
+.header-btn {
   font-weight: 600;
   font-size: 16px;
   text-align: center;
-  border: 1px solid #bcd0e5;
-  color: #173a56;
   border-radius: 4px;
   padding: 9px 15px;
+  height: 42px;
 }
 
-.btn-accent {
+.btn-sign-in {
+  background-color: transparent;
+  color: #173a56;
+  border: 1px solid #bcd0e5;
+  min-width: 105px;
+}
+
+.btn-sign-up {
   background-color: #02897A;
   color: #FFFFFF;
   border: none;
+  min-width: 113px;
 }
 
 .footer {
@@ -136,7 +146,8 @@ align-items: center;
 
 .hero .container {
   display: flex;
-  gap: 35px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hero-wrap {
@@ -147,7 +158,8 @@ align-items: center;
   font-weight: 700;
     font-size: 40px;
     line-height: 1.5;
-    margin: 112px 0 18px;
+    margin-bottom: 18px;
+    width: 400px;
 }
 
 .hero-text {
@@ -156,28 +168,32 @@ align-items: center;
   margin-bottom: 45px;
 }
 
-.hero-links-list {
+.hero-btn-list {
   display: flex;
   gap: 30px;
+  align-items: center;
 }
 
-.hero-link-item {
-}
-
-.hero-link {
-  display: inline-block;
-  padding: 15px 42px;
+.hero-btn {
   background-color: #02897a;
   color: #FFFFFF;
   border-radius: 4px;
+  border: none;
+  font-size: 16px;
   font-weight: 700;
+  min-width: 178px;
+  height: 53px;
 }
 
-.hero-video-link {
-  background-color: #FFFFFF;
-    color: #02897a;
-    text-decoration: underline;
-    font-weight: 600;
+.hero-btn-video {
+  border: none;
+  background-color: transparent;
+  color: #02897a;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 164px;
+  height: 23px;
 }
 /* #endregion HERO */
 
@@ -280,12 +296,53 @@ align-items: center;
 /* #endregion MANAGEMENT */
 
 
-/* #region ======HEADER====== */
-/* #endregion TEAM */
+/* #region ======SUPPORT====== */
+.support {
+  padding: 50px 0;
+}
+
+.support .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 35px;
+}
+
+.support-wrap {
+  max-width: 450px;
+}
+
+.support-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.support-title-accent {
+  display: block;
+  font-weight: 700;
+  font-size: 32px;
+  margin-top: 8px;
+}
+
+.support-text {
+  margin-bottom: 30px;
+}
+
+.support-list {
+  list-style: none;
+}
+
+.support-list-item:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.support-list-text {}
+/* #endregion SUPPORT */
 
 /* #region ======USERS====== */
 .users {
-  padding: 50px 0;
+  padding: 100px 0 50px;
 }
 
 .users .container {
@@ -352,7 +409,9 @@ align-items: center;
 /* #endregion USERS */
 
 /* #region ======STRATEGIES====== */
-.strategies {}
+.strategies {
+  padding: 50px 0 71px;
+}
 
 .container {}
 
@@ -386,20 +445,43 @@ align-items: center;
   margin-bottom: 24px;
 }
 
-.strategies-item-autor {
+.strategies-item-descr-wrap {
+  padding: 24px 27px 40px;
+}
+
+.strategies-autor-date-wrap {
+  margin-bottom: 12px;
+}
+
+.strategies-item-text {
   line-height: 1.75;
+}
+
+.strategies-autor-name {
   font-weight: 700;
 }
 
-/* .strategies-item-autor::after {
+/* .strategies-autor-name::after {
 
 } */
 
-.strategies-item-title {}
+.strategies-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.66667;
+}
+
+.strategies-list-item:hover .strategies-item-title,
+.strategies-list-item:focus .strategies-item-title {
+  color: #02897a;
+}
 /* #endregion STRATEGIES */
 
-/* #region ======HEADER====== */
-/* #endregion TEAM */
+/* #region ======PRICES====== */
+.prices {
+  padding: 100px 0 50px;
+}
+/* #endregion PRICES */
 
 /* #region ======HEADER====== */
 /* #endregion TEAM */
