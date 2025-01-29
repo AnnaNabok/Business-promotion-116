@@ -762,13 +762,14 @@ max-width: 968px;
 /* #endregion INVITATION */
 
 /* #region ======FOOTER====== */
-.footer {
+.footer .container {
   padding: 100px 0 34px;
 }
 
 .footer-container {
   display: flex;
   gap: 82px;
+  margin-bottom: 9px;
 }
 
 .footer-logo-nav {
@@ -788,28 +789,48 @@ max-width: 968px;
 }
 
 .footer-list-item {
-
+line-height: 2.1875;
 }
 
 .footer-list-link {
+
 }
 
-.form-text {
+.footer-form-column {
+  max-width: 325px;
+}
+
+.footer-form-text {
   display: block;
   max-width: 280px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.5;
+  margin-bottom: 34px;
+}
+
+.footer-form {
+  max-width: 100%;
+  height: 48px;
+  padding: 10px 15px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+
+}
+
+.footer-form-input {
+  margin-bottom: 21px;
 }
 
 .footer-btn {
+  display: block;
   font-weight: 700;
     font-size: 16px;
     text-align: center;
     color: #FFFFFF;
     background-color: #02897A;
-    padding: 8px 15px 7px;
+    padding: 8px 15px;
     min-width: 131px;
+    height: 39px;
     border-radius: 4px;
 }
 
